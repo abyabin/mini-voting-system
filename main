@@ -1,0 +1,29 @@
+import java.io.*;
+
+class arraysum
+{
+ public static void main(String args[])
+ {
+  float a[];
+  int n,i;
+  float sum=0;
+  DataInputStream dim;
+  dim=new DataInputStream(System.in);
+  try
+  {
+   System.out.println("enter the size of the array");
+   n=Integer.parseInt(dim.readLine());
+   a=new float[n];
+   System.out.println("enter the elements in the array");
+   for(i=0;i<n;i++)
+   {
+    a[i]=Float.parseFloat(dim.readLine());
+	sum=sum+a[i];
+	}
+	System.out.println("sum is "+sum);
+	}
+	catch(IOException e){System.out.println(e);}
+	}
+	}
+	
+	
